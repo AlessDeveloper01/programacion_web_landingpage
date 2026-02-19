@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Corolla 2020 | MecanicoS</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/view-car.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <aside class="sidebar">
+      <label for="menu-toggle" class="sidebar__close">×</label>
+      <header class="sidebar__brand">
+        <img
+          src="assets/images/logo.png"
+          alt="Logo del Taller"
+          class="sidebar__logo"
+        />
+      </header>
+
+      <nav class="sidebar__nav">
+        <a href="home.html" class="sidebar__link">
+          <span class="sidebar__icon">■</span>
+          <span class="sidebar__text">Dashboard</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="sidebar__icon">■</span>
+          <span class="sidebar__text">Órdenes</span>
+        </a>
+        <a href="#" class="sidebar__link sidebar__link--active">
+          <span class="sidebar__icon">■</span>
+          <span class="sidebar__text">Vehículos</span>
+        </a>
+      </nav>
+    </aside>
+    <main class="main-wrapper-tow">
+        <header class="topbar">
+            <label for="menu-toggle" class="topbar__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+                       <section class="topbar__info">
+                <h2 class="topbar__info-name">MecanicoS |</h2>
+                <time class="topbar__date" datetime="2026-02-15">15 Feb 2026</time>
+            </section>
+            
+            <section class="topbar__user">
+                <span class="topbar__name">Alessandro Rios</span>
+                <span class="topbar__avatar">AR</span>
+            </section>
+        </header>
+
+        <article class="content">
+            <header class="content__header">
+                <nav class="content__header-left">
+                    <a href="home.html" class="btn-back">← Volver</a>
+                    <h1 class="content__title">Toyota Corolla 2020</h1>
+                </nav>
+                <nav class="content__header-actions">
+                    <a href="#" class="btn-secondary">Editar Vehículo</a>
+                    <a href="new-order.html" class="btn-primary">+ Nueva Orden</a>
+                </nav>
+            </header>
+
+            <section class="vehicle-grid">
+                <section class="vehicle-column">
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Información del Vehículo</h2>
+                            <span class="status-badge status-badge--progress">En Taller</span>
+                        </header>
+                        <section class="card__body">
+                            <figure class="vehicle-image">
+                                <img src="assets/images/car.svg" alt="Toyota Corolla 2020" class="vehicle-image__img">
+                            </figure>
+                            <dl class="info-grid">
+                                <section class="info-item">
+                                    <dt class="info-item__label">Marca</dt>
+                                    <dd class="info-item__value">Toyota</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Modelo</dt>
+                                    <dd class="info-item__value">Corolla</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Año</dt>
+                                    <dd class="info-item__value">2020</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Placas</dt>
+                                    <dd class="info-item__value">ABC-123-D</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Color</dt>
+                                    <dd class="info-item__value">Blanco</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">VIN</dt>
+                                    <dd class="info-item__value">2T1BURHE8KC123456</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Kilometraje</dt>
+                                    <dd class="info-item__value">45,230 km</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Combustible</dt>
+                                    <dd class="info-item__value">Gasolina</dd>
+                                </section>
+                            </dl>
+                        </section>
+                    </section>
+
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Información del Cliente</h2>
+                            <a href="#" class="card__link">Ver perfil →</a>
+                        </header>
+                        <section class="card__body">
+                            <section class="client-info">
+                                <figure class="client-info__avatar">CR</figure>
+                                <address class="client-info__details">
+                                    <h3 class="client-info__name">Carlos Ramírez</h3>
+                                    <p class="client-info__id">Cliente #CLT-2024-0089</p>
+                                </address>
+                            </section>
+                            <dl class="info-grid">
+                                <section class="info-item">
+                                    <dt class="info-item__label">Teléfono</dt>
+                                    <dd class="info-item__value">+52 55 1234 5678</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Email</dt>
+                                    <dd class="info-item__value">carlos.ramirez@email.com</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Servicios realizados</dt>
+                                    <dd class="info-item__value">12 servicios</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Última visita</dt>
+                                    <dd class="info-item__value">15 Ene 2026</dd>
+                                </section>
+                            </dl>
+                        </section>
+                    </section>
+
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Historial de Servicios</h2>
+                            <a href="#" class="card__link">Ver todo →</a>
+                        </header>
+                        <section class="card__body">
+                            <section class="timeline">
+                                <article class="timeline-item">
+                                    <time class="timeline-item__date" datetime="2026-02-15">
+                                        <span class="timeline-item__day">15</span>
+                                        <span class="timeline-item__month">Feb</span>
+                                    </time>
+                                    <section class="timeline-item__content">
+                                        <h4 class="timeline-item__title">Cambio de aceite y filtros</h4>
+                                        <p class="timeline-item__order">#ORD-2026-0145</p>
+                                        <p class="timeline-item__desc">Servicio de mantenimiento preventivo cada 5,000 km</p>
+                                        <footer class="timeline-item__footer">
+                                            <span class="timeline-item__status timeline-item__status--progress">En proceso</span>
+                                            <data class="timeline-item__cost" value="1450">$1,450.00</data>
+                                        </footer>
+                                    </section>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <time class="timeline-item__date" datetime="2026-01-08">
+                                        <span class="timeline-item__day">08</span>
+                                        <span class="timeline-item__month">Ene</span>
+                                    </time>
+                                    <section class="timeline-item__content">
+                                        <h4 class="timeline-item__title">Afinación mayor</h4>
+                                        <p class="timeline-item__order">#ORD-2026-0089</p>
+                                        <p class="timeline-item__desc">Cambio de bujías, cables y filtros</p>
+                                        <footer class="timeline-item__footer">
+                                            <span class="timeline-item__status timeline-item__status--complete">Completado</span>
+                                            <data class="timeline-item__cost" value="3200">$3,200.00</data>
+                                        </footer>
+                                    </section>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <time class="timeline-item__date" datetime="2025-12-20">
+                                        <span class="timeline-item__day">20</span>
+                                        <span class="timeline-item__month">Dic</span>
+                                    </time>
+                                    <section class="timeline-item__content">
+                                        <h4 class="timeline-item__title">Balanceo y rotación</h4>
+                                        <p class="timeline-item__order">#ORD-2025-0712</p>
+                                        <p class="timeline-item__desc">Balanceo, rotación y alineación</p>
+                                        <footer class="timeline-item__footer">
+                                            <span class="timeline-item__status timeline-item__status--complete">Completado</span>
+                                            <data class="timeline-item__cost" value="850">$850.00</data>
+                                        </footer>
+                                    </section>
+                                </article>
+
+                                <article class="timeline-item">
+                                    <time class="timeline-item__date" datetime="2025-11-05">
+                                        <span class="timeline-item__day">05</span>
+                                        <span class="timeline-item__month">Nov</span>
+                                    </time>
+                                    <section class="timeline-item__content">
+                                        <h4 class="timeline-item__title">Revisión de frenos</h4>
+                                        <p class="timeline-item__order">#ORD-2025-0598</p>
+                                        <p class="timeline-item__desc">Cambio de pastillas delanteras y traseras</p>
+                                        <footer class="timeline-item__footer">
+                                            <span class="timeline-item__status timeline-item__status--complete">Completado</span>
+                                            <data class="timeline-item__cost" value="2100">$2,100.00</data>
+                                        </footer>
+                                    </section>
+                                </article>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="vehicle-column">
+                    <section class="card card--highlight">
+                        <header class="card__header">
+                            <hgroup>
+                                <h2 class="card__title">Orden Actual</h2>
+                                <p class="card__subtitle">#ORD-2026-0145</p>
+                            </hgroup>
+                            <span class="status-badge status-badge--progress">En Proceso</span>
+                        </header>
+                        <section class="card__body">
+                            <dl class="info-grid">
+                                <section class="info-item">
+                                    <dt class="info-item__label">Fecha de ingreso</dt>
+                                    <dd class="info-item__value">15 Feb 2026 - 08:30 AM</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Fecha estimada</dt>
+                                    <dd class="info-item__value">15 Feb 2026 - 02:00 PM</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Mecánico asignado</dt>
+                                    <dd class="info-item__value">Luis Hernández</dd>
+                                </section>
+                                <section class="info-item">
+                                    <dt class="info-item__label">Prioridad</dt>
+                                    <dd class="info-item__value">Normal</dd>
+                                </section>
+                            </dl>
+
+                            <section class="service-description">
+                                <h3 class="service-description__title">Descripción del Servicio</h3>
+                                <p class="service-description__text">
+                                    Cambio de aceite sintético 5W-30, cambio de filtro de aceite, 
+                                    filtro de aire y revisión general de 21 puntos. Inspección de 
+                                    frenos, suspensión y sistema eléctrico.
+                                </p>
+                            </section>
+
+                            <section class="progress-section">
+                                <header class="progress-section__header">
+                                    <h3 class="progress-section__title">Progreso del Servicio</h3>
+                                    <data class="progress-section__percentage" value="65">65%</data>
+                                </header>
+                                <meter class="progress-bar" value="65" min="0" max="100">
+                                    <span class="progress-bar__fill" style="width: 65%"></span>
+                                </meter>
+                                <ul class="task-list">
+                                    <li class="task-item task-item--complete">
+                                        <span class="task-item__check">✓</span>
+                                        <span class="task-item__text">Recepción del vehículo</span>
+                                    </li>
+                                    <li class="task-item task-item--complete">
+                                        <span class="task-item__check">✓</span>
+                                        <span class="task-item__text">Inspección inicial</span>
+                                    </li>
+                                    <li class="task-item task-item--complete">
+                                        <span class="task-item__check">✓</span>
+                                        <span class="task-item__text">Cambio de aceite</span>
+                                    </li>
+                                    <li class="task-item task-item--active">
+                                        <span class="task-item__check">○</span>
+                                        <span class="task-item__text">Cambio de filtros</span>
+                                    </li>
+                                    <li class="task-item">
+                                        <span class="task-item__check">○</span>
+                                        <span class="task-item__text">Revisión de 21 puntos</span>
+                                    </li>
+                                    <li class="task-item">
+                                        <span class="task-item__check">○</span>
+                                        <span class="task-item__text">Prueba final</span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Refacciones y Materiales</h2>
+                            <button class="btn-text">+ Agregar</button>
+                        </header>
+                        <section class="card__body">
+                            <table class="parts-table">
+                                <thead>
+                                    <tr>
+                                        <th>Descripción</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio Unit.</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <section class="part-name">
+                                                <strong class="part-name__title">Aceite sintético 5W-30</strong>
+                                                <small class="part-name__code">SKU: MOT-5W30-001</small>
+                                            </section>
+                                        </td>
+                                        <td>4 Lts</td>
+                                        <td><data value="95">$95.00</data></td>
+                                        <td><data value="380">$380.00</data></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <section class="part-name">
+                                                <strong class="part-name__title">Filtro de aceite</strong>
+                                                <small class="part-name__code">SKU: FLT-OIL-TOY-001</small>
+                                            </section>
+                                        </td>
+                                        <td>1 Pza</td>
+                                        <td><data value="180">$180.00</data></td>
+                                        <td><data value="180">$180.00</data></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <section class="part-name">
+                                                <strong class="part-name__title">Filtro de aire</strong>
+                                                <small class="part-name__code">SKU: FLT-AIR-TOY-002</small>
+                                            </section>
+                                        </td>
+                                        <td>1 Pza</td>
+                                        <td><data value="220">$220.00</data></td>
+                                        <td><data value="220">$220.00</data></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <section class="part-name">
+                                                <strong class="part-name__title">Aditivo limpiador</strong>
+                                                <small class="part-name__code">SKU: ADD-CLN-001</small>
+                                            </section>
+                                        </td>
+                                        <td>1 Pza</td>
+                                        <td><data value="85">$85.00</data></td>
+                                        <td><data value="85">$85.00</data></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </section>
+
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Resumen de Costos</h2>
+                        </header>
+                        <section class="card__body">
+                            <dl class="cost-summary">
+                                <section class="cost-row">
+                                    <dt class="cost-row__label">Refacciones y materiales</dt>
+                                    <dd class="cost-row__value"><data value="865">$865.00</data></dd>
+                                </section>
+                                <section class="cost-row">
+                                    <dt class="cost-row__label">Mano de obra</dt>
+                                    <dd class="cost-row__value"><data value="450">$450.00</data></dd>
+                                </section>
+                                <section class="cost-row">
+                                    <dt class="cost-row__label">Subtotal</dt>
+                                    <dd class="cost-row__value"><data value="1315">$1,315.00</data></dd>
+                                </section>
+                                <section class="cost-row">
+                                    <dt class="cost-row__label">IVA (16%)</dt>
+                                    <dd class="cost-row__value"><data value="210.40">$210.40</data></dd>
+                                </section>
+                                <section class="cost-row cost-row--total">
+                                    <dt class="cost-row__label">Total</dt>
+                                    <dd class="cost-row__value"><data value="1525.40">$1,525.40</data></dd>
+                                </section>
+                            </dl>
+                            <nav class="card__actions">
+                                <button class="btn-secondary btn-secondary--full">Ver Cotización</button>
+                                <button class="btn-primary btn-primary--full">Generar Factura</button>
+                            </nav>
+                        </section>
+                    </section>
+
+                    <section class="card">
+                        <header class="card__header">
+                            <h2 class="card__title">Notas Internas</h2>
+                        </header>
+                        <section class="card__body">
+                            <section class="notes">
+                                <article class="note">
+                                    <header class="note__header">
+                                        <address class="note__author">
+                                            <figure class="note__avatar">LH</figure>
+                                            <section class="note__author-info">
+                                                <strong class="note__name">Luis Hernández</strong>
+                                                <time class="note__date" datetime="2026-02-15T09:15">15 Feb 2026 - 09:15 AM</time>
+                                            </section>
+                                        </address>
+                                    </header>
+                                    <p class="note__text">
+                                        El cliente reporta un ruido en el motor al acelerar. Se revisará 
+                                        durante el servicio de mantenimiento.
+                                    </p>
+                                </article>
+
+                                <article class="note">
+                                    <header class="note__header">
+                                        <address class="note__author">
+                                            <figure class="note__avatar">AR</figure>
+                                            <section class="note__author-info">
+                                                <strong class="note__name">Alessandro Rios</strong>
+                                                <time class="note__date" datetime="2026-02-15T08:45">15 Feb 2026 - 08:45 AM</time>
+                                            </section>
+                                        </address>
+                                    </header>
+                                    <p class="note__text">
+                                        Cliente solicitó que se use aceite sintético de alta calidad. 
+                                        Aprobado cambio en cotización.
+                                    </p>
+                                </article>
+                            </section>
+                            <form class="note-form">
+                                <textarea class="note-form__input" placeholder="Escribe una nota interna..." rows="3"></textarea>
+                                <button type="submit" class="btn-primary">Agregar Nota</button>
+                            </form>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
+    <aside class="promotions-sidebar">
+        <header class="promotions-sidebar__header">
+            <h2 class="promotions-sidebar__title">Promociones</h2>
+        </header>
+        
+        <section class="promotions-sidebar__content">
+            <article class="promo-card promo-card--featured">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-30%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Cambio de Aceite Premium</h3>
+                    <p class="promo-card__description">Incluye filtro de aceite y revisión general</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$850</span>
+                        <span class="promo-card__price-new">$595</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 28/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-20%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Afinación Completa</h3>
+                    <p class="promo-card__description">Bujías, filtros y limpieza de inyectores</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$1,500</span>
+                        <span class="promo-card__price-new">$1,200</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 25/02/2026</time>
+                </section>
+            </article>
+
+            <!-- <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-15%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Frenos Delanteros</h3>
+                    <p class="promo-card__description">Cambio de pastillas y revisión de discos</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$2,000</span>
+                        <span class="promo-card__price-new">$1,700</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 29/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">2x1</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Lavado Premium</h3>
+                    <p class="promo-card__description">Lavado exterior e interior + encerado</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-new">$350</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 22/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-25%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Diagnóstico Computarizado</h3>
+                    <p class="promo-card__description">Escaneo completo de todos los sistemas</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$800</span>
+                        <span class="promo-card__price-new">$600</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 28/02/2026</time>
+                </section>
+            </article> -->
+        </section>
+    </aside>
+</body>
+</html>

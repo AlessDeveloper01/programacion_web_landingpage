@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MecanicoS</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <aside class="sidebar">
+        <label for="menu-toggle" class="sidebar__close">×</label>
+        <header class="sidebar__brand">
+            <img src="assets/images/logo.png" alt="Logo del Taller" class="sidebar__logo">
+        </header>
+        
+        <nav class="sidebar__nav">
+            <a href="#" class="sidebar__link sidebar__link--active">
+                <span class="sidebar__icon">■</span>
+                <span class="sidebar__text">Dashboard</span>
+            </a>
+            <a href="#" class="sidebar__link">
+                <span class="sidebar__icon">■</span>
+                <span class="sidebar__text">Órdenes</span>
+            </a>
+            <a href="#" class="sidebar__link">
+                <span class="sidebar__icon">■</span>
+                <span class="sidebar__text">Vehículos</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="main-wrapper grid__main">
+        <header class="topbar">
+            <label for="menu-toggle" class="topbar__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <section class="topbar__info">
+                <h2 class="topbar__info-name">MecanicoS |</h2>
+                <time class="topbar__date" datetime="2026-02-15">15 Feb 2026</time>
+            </section>
+            
+            <section class="topbar__user">
+                <span class="topbar__name">Alessandro Rios</span>
+                <span class="topbar__avatar">AR</span>
+            </section>
+        </header>
+
+        <article class="content">
+            <header class="content__header">
+                <h1 class="content__title">Dashboard</h1>
+                <a href="new-order.html" class="btn-primary">+ Nueva Orden</a>
+            </header>
+
+            <section class="metrics">
+                <article class="metric">
+                    <span class="metric__value">24</span>
+                    <span class="metric__label">Vehículos en Taller</span>
+                </article>
+                <article class="metric">
+                    <span class="metric__value">12</span>
+                    <span class="metric__label">Órdenes del Día</span>
+                </article>
+                <article class="metric">
+                    <span class="metric__value">8</span>
+                    <span class="metric__label">Recordatorios</span>
+                </article>
+                <article class="metric">
+                    <span class="metric__value">$84.5k</span>
+                    <span class="metric__label">Ingresos del Mes</span>
+                </article>
+                <article class="metric">
+                    <span class="metric__value">15</span>
+                    <span class="metric__label">Refacciones Bajas</span>
+                </article>
+            </section>
+
+            <section class="grid">
+                <section class="section section--large">
+                    <header class="section__header">
+                        <h2 class="section__title">Vehículos en Taller</h2>
+                        <a href="#" class="section__link">Ver todos →</a>
+                    </header>
+                    
+                    <section class="vehicle-slides">
+                        <a href="view-car.html" class="vehicle-card vehicle-card--progress">
+                            <figure class="vehicle-card__icon">
+                                <img src="assets/images/car.svg" alt="Toyota Corolla" class="vehicle-card__image">
+                            </figure>
+                            <section class="vehicle-card__content">
+                                <h3 class="vehicle-card__model">Toyota Corolla 2020</h3>
+                                <p class="vehicle-card__client">Carlos Ramírez</p>
+                            </section>
+                            <span class="vehicle-card__status">En Proceso</span>
+                        </a>
+
+                        <a href="view-car.html" class="vehicle-card vehicle-card--pending">
+                            <figure class="vehicle-card__icon">
+                                <img src="assets/images/car.svg" alt="Honda Civic" class="vehicle-card__image">
+                            </figure>
+                            <section class="vehicle-card__content">
+                                <h3 class="vehicle-card__model">Honda Civic 2019</h3>
+                                <p class="vehicle-card__client">María López</p>
+                            </section>
+                            <span class="vehicle-card__status">Pendiente</span>
+                        </a>
+
+                        <a href="view-car.html" class="vehicle-card vehicle-card--progress">
+                            <figure class="vehicle-card__icon">
+                                <img src="assets/images/car.svg" alt="Ford F-150 2021" class="vehicle-card__image">
+                            </figure>
+                            <section class="vehicle-card__content">
+                                <h3 class="vehicle-card__model">Ford F-150 2021</h3>
+                                <p class="vehicle-card__client">José Martínez</p>
+                            </section>
+                            <span class="vehicle-card__status">En Proceso</span>
+                        </a>
+
+                        <a href="view-car.html" class="vehicle-card vehicle-card--complete">
+                            <figure class="vehicle-card__icon">
+                                <img src="assets/images/car.svg" alt="Nissan Sentra 2018" class="vehicle-card__image">
+                                    <path d="M14 16H9m10 0h3l-2-7H4l-2 7h3m4 0a2 2 0 1 0 4 0m4 0a2 2 0 1 0 4 0M5.5 9l1.5-4h10l1.5 4"/>
+                                </img>
+                            </figure>
+                            <section class="vehicle-card__content">
+                                <h3 class="vehicle-card__model">Nissan Sentra 2018</h3>
+                                <p class="vehicle-card__client">Ana García</p>
+                            </section>
+                            <span class="vehicle-card__status">Completado</span>
+                        </a>
+
+                        <a href="view-car.html" class="vehicle-card vehicle-card--pending">
+                            <figure class="vehicle-card__icon">
+                                <img src="assets/images/car.svg" alt="Mazda 3 2022" class="vehicle-card__image">
+                                    <path d="M14 16H9m10 0h3l-2-7H4l-2 7h3m4 0a2 2 0 1 0 4 0m4 0a2 2 0 1 0 4 0M5.5 9l1.5-4h10l1.5 4"/>
+                                </img>
+                            </figure>
+                            <section class="vehicle-card__content">
+                                <h3 class="vehicle-card__model">Mazda 3 2022</h3>
+                                <p class="vehicle-card__client">Pedro Sánchez</p>
+                            </section>
+                            <span class="vehicle-card__status">Pendiente</span>
+                        </a>
+                    </section>
+                </section>
+
+                <section class="section">
+                    <header class="section__header">
+                        <h2 class="section__title">Órdenes del Día</h2>
+                        <a href="#" class="section__link">Ver todas →</a>
+                    </header>
+                    <article class="order-item">
+                        <header class="order-item__header">
+                            <strong class="order-item__number">#ORD-2026-0145</strong>
+                            <span class="badge badge--progress">En Proceso</span>
+                        </header>
+                        <p class="order-item__vehicle">Toyota Corolla 2020 - ABC-123-D</p>
+                        <p class="order-item__description">Cambio de aceite, filtros y revisión general</p>
+                        <footer class="order-item__footer">
+                            <time class="order-item__time">Inicio: 08:30 AM</time>
+                            <span class="order-item__mechanic">Mecánico: Luis Hernández</span>
+                        </footer>
+                    </article>
+
+                    <article class="order-item">
+                        <header class="order-item__header">
+                            <strong class="order-item__number">#ORD-2026-0146</strong>
+                            <span class="badge badge--pending">Pendiente</span>
+                        </header>
+                        <p class="order-item__vehicle">Honda Civic 2019 - XYZ-789-F</p>
+                        <p class="order-item__description">Reparación de sistema de transmisión</p>
+                        <footer class="order-item__footer">
+                            <time class="order-item__time">Programado: 10:00 AM</time>
+                            <span class="order-item__mechanic">Mecánico: Roberto Díaz</span>
+                        </footer>
+                    </article>
+
+                    <article class="order-item">
+                        <header class="order-item__header">
+                            <strong class="order-item__number">#ORD-2026-0147</strong>
+                            <span class="badge badge--complete">Completado</span>
+                        </header>
+                        <p class="order-item__vehicle">Nissan Sentra 2018 - GHI-321-H</p>
+                        <p class="order-item__description">Servicio de afinación completa</p>
+                        <footer class="order-item__footer">
+                            <time class="order-item__time">Completado: 09:45 AM</time>
+                            <span class="order-item__mechanic">Mecánico: Manuel Torres</span>
+                        </footer>
+                    </article>
+
+                    <article class="order-item">
+                        <header class="order-item__header">
+                            <strong class="order-item__number">#ORD-2026-0148</strong>
+                            <span class="badge badge--pending">Pendiente</span>
+                        </header>
+                        <p class="order-item__vehicle">Ford F-150 2021 - DEF-456-G</p>
+                        <p class="order-item__description">Diagnóstico de motor y sistema eléctrico</p>
+                        <footer class="order-item__footer">
+                            <time class="order-item__time">Programado: 02:00 PM</time>
+                            <span class="order-item__mechanic">Mecánico: Luis Hernández</span>
+                        </footer>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <header class="section__header">
+                        <h2 class="section__title">Recordatorios por Enviar</h2>
+                        <a href="#" class="section__link">Gestionar →</a>
+                    </header>
+                    <article class="reminder-item">
+                        <figure class="reminder-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </figure>
+                        <section class="reminder-item__content">
+                            <h3 class="reminder-item__title">Mantenimiento Programado</h3>
+                            <p class="reminder-item__desc">Carlos Ramírez - Toyota Corolla - Mantenimiento 10,000 km</p>
+                            <time class="reminder-item__date">Vence: 20/02/2026</time>
+                        </section>
+                        <button class="reminder-item__btn">Enviar</button>
+                    </article>
+
+                    <article class="reminder-item">
+                        <figure class="reminder-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </figure>
+                        <section class="reminder-item__content">
+                            <h3 class="reminder-item__title">Cambio de Aceite</h3>
+                            <p class="reminder-item__desc">María López - Honda Civic - Cambio de aceite programado</p>
+                            <time class="reminder-item__date">Vence: 18/02/2026</time>
+                        </section>
+                        <button class="reminder-item__btn">Enviar</button>
+                    </article>
+
+                    <article class="reminder-item">
+                        <figure class="reminder-item__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </figure>
+                        <section class="reminder-item__content">
+                            <h3 class="reminder-item__title">Inspección Anual</h3>
+                            <p class="reminder-item__desc">José Martínez - Ford F-150 - Inspección anual requerida</p>
+                            <time class="reminder-item__date">Vence: 25/02/2026</time>
+                        </section>
+                        <button class="reminder-item__btn">Enviar</button>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <header class="section__header">
+                        <h2 class="section__title">Refacciones por Pedir</h2>
+                        <a href="#" class="section__link">Ver inventario →</a>
+                    </header>
+                    <article class="part-item part-item--critical">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Filtro de Aceite Premium</p>
+                            <p class="part-item__code">SKU: FLT-001</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 2 unidades</span>
+                            <span class="badge badge--danger">Crítico</span>
+                        </section>
+                    </article>
+
+                    <article class="part-item part-item--low">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Pastillas de Freno Delanteras</p>
+                            <p class="part-item__code">SKU: BRK-045</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 5 pares</span>
+                            <span class="badge badge--warning">Bajo</span>
+                        </section>
+                    </article>
+
+                    <article class="part-item part-item--critical">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Aceite Sintético 5W-30</p>
+                            <p class="part-item__code">SKU: OIL-230</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 3 litros</span>
+                            <span class="badge badge--danger">Crítico</span>
+                        </section>
+                    </article>
+
+                    <article class="part-item part-item--low">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Bujías NGK Platinum</p>
+                            <p class="part-item__code">SKU: SPK-112</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 8 unidades</span>
+                            <span class="badge badge--warning">Bajo</span>
+                        </section>
+                    </article>
+
+                    <article class="part-item part-item--critical">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Correa de Distribución</p>
+                            <p class="part-item__code">SKU: BLT-078</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 1 unidad</span>
+                            <span class="badge badge--danger">Crítico</span>
+                        </section>
+                    </article>
+
+                    <article class="part-item part-item--low">
+                        <section class="part-item__info">
+                            <p class="part-item__name">Anticongelante Concentrado</p>
+                            <p class="part-item__code">SKU: CLT-089</p>
+                        </section>
+                        <section class="part-item__stock">
+                            <span class="part-item__level">Stock: 6 litros</span>
+                            <span class="badge badge--warning">Bajo</span>
+                        </section>
+                    </article>
+                </section>
+            </section>
+        </article>
+    </main>
+    
+    <aside class="promotions-sidebar">
+        <header class="promotions-sidebar__header">
+            <h2 class="promotions-sidebar__title">Promociones</h2>
+        </header>
+        
+        <section class="promotions-sidebar__content">
+            <article class="promo-card promo-card--featured">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-30%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Cambio de Aceite Premium</h3>
+                    <p class="promo-card__description">Incluye filtro de aceite y revisión general</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$850</span>
+                        <span class="promo-card__price-new">$595</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 28/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-20%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Afinación Completa</h3>
+                    <p class="promo-card__description">Bujías, filtros y limpieza de inyectores</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$1,500</span>
+                        <span class="promo-card__price-new">$1,200</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 25/02/2026</time>
+                </section>
+            </article>
+
+            <!-- <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-15%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Frenos Delanteros</h3>
+                    <p class="promo-card__description">Cambio de pastillas y revisión de discos</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$2,000</span>
+                        <span class="promo-card__price-new">$1,700</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 29/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">2x1</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Lavado Premium</h3>
+                    <p class="promo-card__description">Lavado exterior e interior + encerado</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-new">$350</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 22/02/2026</time>
+                </section>
+            </article>
+
+            <article class="promo-card">
+                <figure class="promo-card__banner">
+                    <span class="promo-card__discount">-25%</span>
+                </figure>
+                <section class="promo-card__content">
+                    <h3 class="promo-card__title">Diagnóstico Computarizado</h3>
+                    <p class="promo-card__description">Escaneo completo de todos los sistemas</p>
+                    <div class="promo-card__price">
+                        <span class="promo-card__price-old">$800</span>
+                        <span class="promo-card__price-new">$600</span>
+                    </div>
+                    <time class="promo-card__validity">Válido hasta: 28/02/2026</time>
+                </section>
+            </article> -->
+        </section>
+    </aside>
+</body>
+</html>
