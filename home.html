@@ -326,6 +326,123 @@
                         </section>
                     </article>
                 </section>
+
+                <section class="section section--large">
+                    <header class="section__header">
+                        <h2 class="section__title">Historial de Órdenes Recientes</h2>
+                        <a href="#" class="section__link">Ver historial completo →</a>
+                    </header>
+                    <figure class="table-responsive">
+                        <table class="table">
+                            <caption class="table__caption">Registro de las últimas órdenes de servicio procesadas en el taller</caption>
+                            <colgroup>
+                                <col class="col--order">
+                                <col class="col--vehicle">
+                                <col class="col--client">
+                                <col class="col--mechanic">
+                                <col class="col--service">
+                                <col class="col--status">
+                                <col class="col--date">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Orden</th>
+                                    <th scope="col">Vehículo</th>
+                                    <th scope="col">Cliente</th>
+                                    <th scope="col">Mecánico</th>
+                                    <th scope="col">Servicio</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0141</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Toyota Corolla 2020</span>
+                                        <span class="vehicle__plate">ABC-123-D</span>
+                                    </td>
+                                    <td>Carlos Ramírez</td>
+                                    <td>Luis Hernández</td>
+                                    <td>Cambio de aceite y filtros</td>
+                                    <td><span class="badge badge--complete">Completado</span></td>
+                                    <td><time datetime="2026-02-22">22 Feb</time></td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0142</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Honda Civic 2019</span>
+                                        <span class="vehicle__plate">XYZ-789-F</span>
+                                    </td>
+                                    <td>María López</td>
+                                    <td>Roberto Díaz</td>
+                                    <td>Reparación de sistema de frenos</td>
+                                    <td><span class="badge badge--progress">En Proceso</span></td>
+                                    <td><time datetime="2026-02-23">23 Feb</time></td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0143</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Ford F-150 2021</span>
+                                        <span class="vehicle__plate">DEF-456-G</span>
+                                    </td>
+                                    <td>José Martínez</td>
+                                    <td>Manuel Torres</td>
+                                    <td>Diagnóstico de motor y sistema eléctrico</td>
+                                    <td><span class="badge badge--pending">Pendiente</span></td>
+                                    <td><time datetime="2026-02-23">23 Feb</time></td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0144</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Nissan Sentra 2018</span>
+                                        <span class="vehicle__plate">GHI-321-H</span>
+                                    </td>
+                                    <td>Ana García</td>
+                                    <td>Luis Hernández</td>
+                                    <td>Afinación completa</td>
+                                    <td><span class="badge badge--complete">Completado</span></td>
+                                    <td><time datetime="2026-02-21">21 Feb</time></td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0140</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Mazda 3 2022</span>
+                                        <span class="vehicle__plate">JKL-654-I</span>
+                                    </td>
+                                    <td>Pedro Sánchez</td>
+                                    <td>Roberto Díaz</td>
+                                    <td>Cambio de caja de transmisión</td>
+                                    <td><span class="badge badge--complete">Completado</span></td>
+                                    <td><time datetime="2026-02-20">20 Feb</time></td>
+                                </tr>
+                                <tr>
+                                    <td><strong class="order-num">#ORD-2026-0139</strong></td>
+                                    <td>
+                                        <span class="vehicle__name">Chevrolet Spark 2023</span>
+                                        <span class="vehicle__plate">MNO-987-J</span>
+                                    </td>
+                                    <td>Laura Jiménez</td>
+                                    <td>Manuel Torres</td>
+                                    <td>Revisión de suspensión</td>
+                                    <td><span class="badge badge--pending">Pendiente</span></td>
+                                    <td><time datetime="2026-02-23">23 Feb</time></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"><strong>Total de órdenes recientes mostradas</strong></td>
+                                    <td colspan="2">
+                                        <span class="badge badge--complete">3 Completadas</span>
+                                        <span class="badge badge--progress">1 En Proceso</span>
+                                        <span class="badge badge--pending">2 Pendientes</span>
+                                    </td>
+                                    <td><strong>6 órdenes</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </figure>
+                </section>
             </section>
         </article>
     </main>

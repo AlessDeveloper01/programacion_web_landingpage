@@ -1,4 +1,15 @@
-
+/* ── Accesibilidad: legend visible solo para lectores de pantalla ── */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .header-actions {
     display: flex;
@@ -72,12 +83,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    /* Reset estilos por defecto de fieldset */
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    /* Reset margin por defecto de <p> */
+    margin: 0;
+    padding: 0;
 }
 
 .form-group--full {
@@ -123,8 +142,36 @@
 }
 
 .form-control--sm {
-    padding: 0.8rem 1.2rem;
-    font-size: 1.3rem;
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+    min-width: 0;
+    width: 100%;
+}
+
+/* Anchos de columna en la tabla de servicios */
+.table .table-cell:nth-child(1),
+.table .table-header:nth-child(1) {
+    width: 13rem;
+}
+
+.table .table-cell:nth-child(2),
+.table .table-header:nth-child(2) {
+    min-width: 22rem;
+}
+
+.table .table-cell:nth-child(3),
+.table .table-header:nth-child(3) {
+    width: 10rem;
+}
+
+.table .table-cell:nth-child(4),
+.table .table-header:nth-child(4) {
+    width: 13rem;
+}
+
+.table .table-cell:nth-child(5),
+.table .table-header:nth-child(5) {
+    width: 10rem;
 }
 
 .services-table {
@@ -141,13 +188,14 @@
 }
 
 .table-header {
-    padding: 1.2rem 1.6rem;
+    padding: 1.6rem 2rem;
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text);
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 .table-body .table-row {
@@ -160,7 +208,8 @@
 }
 
 .table-cell {
-    padding: 1.6rem;
+    padding: 1.4rem 2rem;
+    vertical-align: middle;
 }
 
 .table-cell--total {
@@ -229,8 +278,8 @@
 }
 
 .summary-divider {
-    height: 1px;
-    background: var(--border);
+    border: none;
+    border-top: 1px solid var(--border);
     margin: 1rem 0;
 }
 
@@ -251,6 +300,11 @@
 
 .summary-value--pending {
     color: var(--primary);
+}
+
+/* <output> comparte estilo con los valores del resumen */
+output.summary-value {
+    font-family: 'Raleway', sans-serif;
 }
 
 .order-summary .form-group {

@@ -2412,3 +2412,63 @@ body {
     font-weight: 900;
     color: var(--text);
 }
+
+/* ── Tabla semántica HTML5 ──────────────────────────────── */
+.table__caption {
+    caption-side: top;
+    padding: 0 0 1.6rem 0;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    text-align: left;
+    font-style: italic;
+}
+
+.table tfoot tr {
+    background: rgba(255, 107, 53, 0.04);
+    border-top: 2px solid var(--primary);
+}
+
+.table tfoot td {
+    padding: 1.4rem 1.5rem;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.table tfoot .badge {
+    margin-right: 0.6rem;
+}
+
+.order-num {
+    color: var(--primary);
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.col--order {
+    width: 13%;
+}
+
+.col--vehicle {
+    width: 20%;
+}
+
+.col--client {
+    width: 13%;
+}
+
+.col--mechanic {
+    width: 13%;
+}
+
+.col--service {
+    width: 24%;
+}
+
+.col--status {
+    width: 11%;
+}
+
+.col--date {
+    width: 6%;
+}

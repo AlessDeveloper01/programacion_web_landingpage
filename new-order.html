@@ -73,8 +73,10 @@
                 <button type="button" class="btn-link">+ Nuevo Cliente</button>
               </header>
 
-              <div class="form-grid">
-                <div class="form-group form-group--full">
+              <fieldset class="form-grid">
+                <legend class="sr-only">Datos del cliente</legend>
+
+                <p class="form-group form-group--full">
                   <label for="cliente" class="form-label">Cliente</label>
                   <select id="cliente" class="form-control">
                     <option value="">Seleccionar cliente...</option>
@@ -82,9 +84,9 @@
                     <option value="2">María López Sánchez</option>
                     <option value="3">Carlos Ramírez Torres</option>
                   </select>
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="telefono" class="form-label">Teléfono</label>
                   <input
                     type="tel"
@@ -93,12 +95,10 @@
                     placeholder="Teléfono del cliente"
                     readonly
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
-                  <label for="email" class="form-label"
-                    >Correo Electrónico</label
-                  >
+                <p class="form-group">
+                  <label for="email" class="form-label">Correo Electrónico</label>
                   <input
                     type="email"
                     id="email"
@@ -106,8 +106,8 @@
                     placeholder="cliente@email.com"
                     readonly
                   />
-                </div>
-              </div>
+                </p>
+              </fieldset>
             </section>
 
             <section class="form-section">
@@ -116,8 +116,10 @@
                 <button type="button" class="btn-link">+ Nuevo Vehículo</button>
               </header>
 
-              <div class="form-grid">
-                <div class="form-group">
+              <fieldset class="form-grid">
+                <legend class="sr-only">Datos del vehículo</legend>
+
+                <p class="form-group">
                   <label for="vehiculo" class="form-label">Vehículo</label>
                   <select id="vehiculo" class="form-control">
                     <option value="">Seleccionar vehículo...</option>
@@ -125,9 +127,9 @@
                     <option value="2">Toyota Corolla - XYZ789</option>
                     <option value="3">Nissan Sentra - DEF456</option>
                   </select>
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="placas" class="form-label">Placas</label>
                   <input
                     type="text"
@@ -136,9 +138,9 @@
                     placeholder="ABC-123"
                     readonly
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="marca" class="form-label">Marca</label>
                   <input
                     type="text"
@@ -147,9 +149,9 @@
                     placeholder="Marca"
                     readonly
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="modelo" class="form-label">Modelo</label>
                   <input
                     type="text"
@@ -158,9 +160,9 @@
                     placeholder="Modelo"
                     readonly
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="ano" class="form-label">Año</label>
                   <input
                     type="text"
@@ -169,20 +171,18 @@
                     placeholder="2024"
                     readonly
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
-                  <label for="kilometraje" class="form-label"
-                    >Kilometraje Actual</label
-                  >
+                <p class="form-group">
+                  <label for="kilometraje" class="form-label">Kilometraje Actual</label>
                   <input
                     type="number"
                     id="kilometraje"
                     class="form-control"
                     placeholder="50000"
                   />
-                </div>
-              </div>
+                </p>
+              </fieldset>
             </section>
 
             <section class="form-section">
@@ -193,7 +193,7 @@
                 </button>
               </header>
 
-              <div class="services-table">
+              <figure class="services-table">
                 <table class="table">
                   <thead class="table-head">
                     <tr>
@@ -245,26 +245,26 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </figure>
             </section>
 
             <section class="form-section">
               <h2 class="section-title">Información Adicional</h2>
 
-              <div class="form-grid">
-                <div class="form-group form-group--full">
-                  <label for="diagnostico" class="form-label"
-                    >Diagnóstico / Motivo de Ingreso</label
-                  >
+              <fieldset class="form-grid">
+                <legend class="sr-only">Datos adicionales de la orden</legend>
+
+                <p class="form-group form-group--full">
+                  <label for="diagnostico" class="form-label">Diagnóstico / Motivo de Ingreso</label>
                   <textarea
                     id="diagnostico"
                     class="form-control form-control--textarea"
                     rows="4"
                     placeholder="Describa el diagnóstico o motivo por el cual ingresa el vehículo..."
                   ></textarea>
-                </div>
+                </p>
 
-                <div class="form-group form-group--full">
+                <p class="form-group form-group--full">
                   <label for="notas" class="form-label">Notas Internas</label>
                   <textarea
                     id="notas"
@@ -272,71 +272,65 @@
                     rows="3"
                     placeholder="Notas o comentarios adicionales (no visible para el cliente)"
                   ></textarea>
-                </div>
+                </p>
 
-                <div class="form-group">
-                  <label for="fecha-ingreso" class="form-label"
-                    >Fecha de Ingreso</label
-                  >
+                <p class="form-group">
+                  <label for="fecha-ingreso" class="form-label">Fecha de Ingreso</label>
                   <input
                     type="date"
                     id="fecha-ingreso"
                     class="form-control"
                     value="2026-02-15"
                   />
-                </div>
+                </p>
 
-                <div class="form-group">
-                  <label for="fecha-promesa" class="form-label"
-                    >Fecha Promesa de Entrega</label
-                  >
+                <p class="form-group">
+                  <label for="fecha-promesa" class="form-label">Fecha Promesa de Entrega</label>
                   <input type="date" id="fecha-promesa" class="form-control" />
-                </div>
+                </p>
 
-                <div class="form-group">
-                  <label for="mecanico" class="form-label"
-                    >Mecánico Asignado</label
-                  >
+                <p class="form-group">
+                  <label for="mecanico" class="form-label">Mecánico Asignado</label>
                   <select id="mecanico" class="form-control">
                     <option value="">Sin asignar</option>
                     <option value="1">Roberto Martínez</option>
                     <option value="2">Luis Hernández</option>
                     <option value="3">Pedro González</option>
                   </select>
-                </div>
+                </p>
 
-                <div class="form-group">
+                <p class="form-group">
                   <label for="prioridad" class="form-label">Prioridad</label>
                   <select id="prioridad" class="form-control">
                     <option value="normal">Normal</option>
                     <option value="alta">Alta</option>
                     <option value="urgente">Urgente</option>
                   </select>
-                </div>
-              </div>
+                </p>
+              </fieldset>
             </section>
           </form>
           <aside class="order-summary">
             <h3 class="summary-title">Resumen de la Orden</h3>
 
-            <div class="summary-row">
+            <p class="summary-row">
               <span class="summary-label">Subtotal</span>
-              <span class="summary-value">$0.00</span>
-            </div>
+              <output class="summary-value" id="subtotal" for="services-body">$0.00</output>
+            </p>
 
-            <div class="summary-row">
+            <p class="summary-row">
               <span class="summary-label">IVA (16%)</span>
-              <span class="summary-value">$0.00</span>
-            </div>
+              <output class="summary-value" id="iva" for="subtotal">$0.00</output>
+            </p>
 
-            <div class="summary-divider"></div>
+            <hr class="summary-divider">
 
-            <div class="summary-row summary-row--total">
+            <p class="summary-row summary-row--total">
               <span class="summary-label">Total</span>
-              <span class="summary-value">$0.00</span>
-            </div>
+              <output class="summary-value" id="total" for="subtotal iva">$0.00</output>
+            </p>
 
-            <div class="form-group">
+            <p class="form-group">
               <label for="anticipo" class="form-label">Anticipo</label>
               <input
                 type="number"
@@ -345,12 +339,12 @@
                 placeholder="0.00"
                 step="0.01"
               />
-            </div>
+            </p>
 
-            <div class="summary-row">
+            <p class="summary-row">
               <span class="summary-label">Saldo Pendiente</span>
-              <span class="summary-value summary-value--pending">$0.00</span>
-            </div>
+              <output class="summary-value summary-value--pending" id="saldo" for="total anticipo">$0.00</output>
+            </p>
           </aside>
         </section>
       </article>
@@ -368,10 +362,10 @@
                 <section class="promo-card__content">
                     <h3 class="promo-card__title">Cambio de Aceite Premium</h3>
                     <p class="promo-card__description">Incluye filtro de aceite y revisión general</p>
-                    <div class="promo-card__price">
+                    <p class="promo-card__price">
                         <span class="promo-card__price-old">$850</span>
                         <span class="promo-card__price-new">$595</span>
-                    </div>
+                    </p>
                     <time class="promo-card__validity">Válido hasta: 28/02/2026</time>
                 </section>
             </article>
@@ -383,10 +377,10 @@
                 <section class="promo-card__content">
                     <h3 class="promo-card__title">Afinación Completa</h3>
                     <p class="promo-card__description">Bujías, filtros y limpieza de inyectores</p>
-                    <div class="promo-card__price">
+                    <p class="promo-card__price">
                         <span class="promo-card__price-old">$1,500</span>
                         <span class="promo-card__price-new">$1,200</span>
-                    </div>
+                    </p>
                     <time class="promo-card__validity">Válido hasta: 25/02/2026</time>
                 </section>
             </article>
